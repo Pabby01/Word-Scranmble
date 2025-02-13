@@ -1,0 +1,61 @@
+export const words = [
+  { word: "react", hint: "A popular JavaScript library for building UIs" },
+  { word: "javascript", hint: "A scripting language for web development" },
+  { word: "developer", hint: "Someone who writes code" },
+  { word: "typescript", hint: "A superset of JavaScript with static typing" },
+  { word: "frontend", hint: "The part of a website users interact with" },
+  { word: "backend", hint: "The server-side of a web application" },
+  { word: "database", hint: "Stores and organizes data for applications" },
+  { word: "nodejs", hint: "A runtime for executing JavaScript outside the browser" },
+  { word: "express", hint: "A web framework for Node.js" },
+  { word: "mongodb", hint: "A NoSQL document database" },
+  { word: "graphql", hint: "A query language for APIs" },
+  { word: "docker", hint: "A tool for containerizing applications" },
+  { word: "kubernetes", hint: "An orchestration system for containers" },
+  { word: "python", hint: "A popular high-level programming language" },
+  { word: "flask", hint: "A micro web framework for Python" },
+  { word: "django", hint: "A high-level Python web framework" },
+  { word: "html", hint: "The standard language for creating web pages" },
+  { word: "css", hint: "Used for styling web pages" },
+  { word: "bootstrap", hint: "A front-end framework for responsive design" },
+  { word: "tailwind", hint: "A utility-first CSS framework" },
+  { word: "redux", hint: "A state management library for JavaScript apps" },
+  { word: "git", hint: "A version control system" },
+  { word: "github", hint: "A platform for hosting and collaborating on code" },
+  { word: "linux", hint: "An open-source operating system" },
+  { word: "terminal", hint: "A command-line interface for interacting with a computer" },
+  { word: "api", hint: "A set of functions allowing software to interact" },
+  { word: "websocket", hint: "A protocol for real-time communication" },
+  { word: "json", hint: "A lightweight data format often used in APIs" },
+  { word: "typescript", hint: "A typed superset of JavaScript" },
+  { word: "machinelearning", hint: "A field of AI focused on pattern recognition" },
+  { word: "neuralnetwork", hint: "A computational model inspired by the human brain" },
+  { word: "bigdata", hint: "Large and complex data sets" },
+  { word: "cloud", hint: "Remote servers used to store and manage data" },
+  { word: "firebase", hint: "A backend-as-a-service by Google" },
+  { word: "swift", hint: "A programming language for iOS development" },
+  { word: "android", hint: "Google's mobile operating system" },
+  { word: "flutter", hint: "A UI toolkit for building cross-platform apps" },
+  { word: "java", hint: "A programming language widely used for enterprise applications" },
+  { word: "csharp", hint: "A language developed by Microsoft for .NET applications" },
+  { word: "php", hint: "A scripting language for server-side web development" },
+  { word: "ruby", hint: "A dynamic, open-source programming language" },
+  { word: "laravel", hint: "A PHP framework for building web applications" },
+  { word: "go", hint: "A statically typed language developed by Google" },
+  { word: "rust", hint: "A systems programming language focused on safety" },
+  { word: "bash", hint: "A Unix shell and command language" },
+  { word: "cybersecurity", hint: "The practice of protecting systems from cyber threats" },
+  { word: "blockchain", hint: "A decentralized ledger technology" },
+  { word: "devops", hint: "A culture combining software development and IT operations" },
+  { word: "agile", hint: "A methodology for iterative software development" },
+  { word: "scrum", hint: "A framework for managing agile development" },
+];
+
+export const scrambleWord = (word) => {
+  return word.split("").sort(() => Math.random() - 0.5).join("");
+};
+
+export const getRandomWord = () => {
+  const randomIndex = Math.floor(Math.random() * words.length);
+  return words[randomIndex];
+};

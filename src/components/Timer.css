@@ -1,0 +1,93 @@
+/* Timer Styles */
+.timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0ff; /* Neon cyan text */
+  padding: 1rem;
+  border: 2px solid #0ff; /* Neon border */
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px #0ff; /* Stronger glow effect */
+  text-align: center;
+  width: fit-content;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  margin: 1rem auto; /* Centering */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Timer Pulse Effect */
+.timer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Modal Box */
+.modal-content {
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a); /* Dark gradient */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0px 0px 20px cyan;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Modal Heading */
+.modal-content h2 {
+  font-size: 1.8rem;
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+/* Modal Text */
+.modal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Restart Button */
+.restart-button {
+  background: cyan;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px cyan;
+}
+
+.restart-button:hover {
+  background: lightblue;
+  box-shadow: 0 0 20px lightblue;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

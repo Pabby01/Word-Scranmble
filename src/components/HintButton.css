@@ -1,0 +1,31 @@
+/* HintButton.css */
+.hint-container {
+    margin-top: 1rem;
+  }
+  
+  .hint-button {
+    padding: 0.5rem 1rem;
+    background-color: #0ff; /* Neon blue */
+    color: black;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #0ff; /* Neon glow effect */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .hint-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .hint-button:active {
+    transform: scale(0.9);
+  }
+  
+  .hint-text {
+    margin-top: 0.5rem;
+    font-size: 1.125rem; /* 18px */
+    color: #0ff; /* Neon blue */
+  }
+  
