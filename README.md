@@ -1,4 +1,4 @@
-## 🛠 **📌 Word Scramble Game ** 
+## 🛠 📌 Word Scramble Game  
   
 
 **A fun and interactive word scramble game built with React and Framer Motion. Test your vocabulary skills by unscrambling words before time runs out! 🔥**  
