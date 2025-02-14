@@ -45,7 +45,7 @@ const Timer = ({ timeLeft, setTimeLeft, onRestart }) => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
             >
-              <h2>⏳ Times Up!</h2>
+              <h2>⏳ Time Up!</h2>
               <p>You ran out of time! Want to try again?</p>
               <button
                 className="restart-button"
